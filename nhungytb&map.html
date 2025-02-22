@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhúng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 800px; 
+            display: block;
+            margin: 10px auto;
+        }
+
+        .map, .slide, .video {
+            width: 100%;
+            max-width: 700px;
+        }
+
+        .chat-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 300px;
+            height: 400px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Video YouTube -->
+    <iframe class="video" 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/0HOa-A0rt_Q?si=I6bBpqTZCoheA2og" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- Nhúng Google Maps -->
+    <h3> 
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAuZJREFUSEu1lVmojXEUxX/XTGRKxgcvSIYMmUkZy5wHJFLK9EIhyRDJUIYylBCSSB7IPMs8k0wPXrwYkymSWfbSOvWdz3fPvffBv07nO+f89157r73WPkX851P0n/NTGoDOQF+gE9DdBV0FbgJngNuFiiwE0AxYAwwtocsDwCzgSda94gAWxOXFQHngAqAkl53kF9Ac6AGMAHoDP4FFwPI0SBbABGAH8A6YCBwsoYPhwHagDjAe2JW8nwZoD9wAfge/Pc1vDWCjPzd18CfgJLAUuBfP3aKTc/5Ns3qQA0kDnHfLU4AtQJMY8KXoKJf4DfADaOgEKmSgh62YTX7unwXQGHjmDroCtSP4GtDCQauC99MOVHea0wDgFdAS+GBldYjiGgGvdTfZwUyrZjqwAVgGzAMOe5iqNnkkAM1nsAe8BJgBrPX7+jSAtC0u2wAP/Wpl/UvrGr66UFFzgW2AOlWX8kQXx94HrnhmeR0oqRJKDe8BybEcUDk6+Q68DI4buAUprG7IshLwza8qjn0LPAJapztQJaqoalT4NcwjpVQHFKgkWQA1zb3418ykuI/AdbOR14Fsr5XQztI7C/Sxk48UQ9GYEMEeS1R3O1raEoMEkAcgJ8q9k0KeW4HJIcfNVokUJqq+JKZc0UqpBUyzRHMxC+2RPID6lqlMIqlJJRqWhlfPHaw2gNQlt78IFd3yEtS6uGvulUtz+meb7gbGAuMAPUvPMpxUI4dqJehMNfiKmI0MJiCtiZ1eFXr+e9JObmvJVQBGRieHEpRo52jp6YwCjgGf/XkYsN9LTx1rfWQC6EvZ/GhwKJDZoY51lmyvGPpFx/UDJALRKHOJOlE0JOg6lXRjcet6kKtXgufAaMtRXtHRjKrFitgLSADyjP43jieTZ1GU/F07SPtdVM0xt+JaR8tPNK0M9+6LBTgfeJxOXhJA7r60rSpP2HD6XoYSTU+j8jtZiQvNoND9Mv9Wmj/9MidNBvwBFCyeGbvY1o8AAAAASUVORK5CYII="/> 
+        Địa chỉ của tôi
+    </h3>
+
+    <iframe class="map" 
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d463.2953642759845!2d105.68018128683104!3d19.92202209671236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e1!3m2!1sen!2s!4v1740014321465!5m2!1sen!2s" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+    </iframe>
+
+    <!-- Chatbox -->
+    <div class="chat-box">
+        <script src="https://uhchat.net/code.php?f=f42d87"></script>
+    </div>
+
+    <!-- Slideshow -->
+    <iframe class="slide" 
+        src="https://albumizr.com/a/obLn" 
+        scrolling="no" 
+        frameborder="0" 
+        allowfullscreen 
+        width="700" 
+        height="400">
+    </iframe>
+
+</body>
+</html>
